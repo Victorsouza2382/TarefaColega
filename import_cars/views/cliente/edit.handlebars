@@ -1,0 +1,19 @@
+<div class="container p-2 ">
+<form action="/clienteRoutes/edit/update" method="POST" class="w-50 mx-auto bg-light p-3 rounded shadow">
+<h3 class="text-center">Editar Cliente <b>{{cliente.nome}}</b></h3>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" class="form-control"  id="" value={{cliente.nome}}>
+    <label for="nome">Idade:</label>
+    <input type="number"  class="form-control" name="idade" id="" value={{cliente.idade}}>
+    <label for="sexo">Sexo:</label>
+    <select name="sexo" id="" class="form-control">
+        <option value={{cliente.sexo}}>{{cliente.sexo}}</option>
+        <option value="Feminino"> Feminino </option>
+        <option value="Masculino"> Masculino </option>
+    </select>
+    <input type="hidden" name="id" id="" value={{cliente.id}}>
+    <div class="w-100 text-center p-3">
+    <input type="submit" name="" id="" class="btn btn-info text-center col-6"  value="Editar">
+    </div>
+</form>
+</div>

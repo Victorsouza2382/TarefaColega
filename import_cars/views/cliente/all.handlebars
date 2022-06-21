@@ -1,0 +1,18 @@
+ {{#if emptyClientes}}
+    <div class="container text-center p-3 rounded alert-info text-info">
+    <h5 class="">Não existem clientes cadastrados ainda</h5>
+    </div>
+{{/if}}
+<div class="container p-2">
+{{#each cliente}}
+<label for="">Nome:</label>
+    <p class="form-control ">{{this.nome}}</p>
+    <div class="d-flex w-100">
+    <form action="/clienteRoutes/delete"  method="POST">
+    <input type="hidden" name="id" value={{this.id}}>
+    <button class="btn-danger btn col" type="submit"> Excluir</button></form>
+    <form action="/clienteRoutes/edit" method="POST" >
+    <input type="hidden" name="id" value={{this.id}}>
+    <button class="btn-info btn " type="submit"> Editar</button></form></div>
+{{/each}}
+</div>

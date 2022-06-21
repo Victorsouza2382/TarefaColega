@@ -1,0 +1,22 @@
+<div class="container p-2 ">
+<form action="/veiculoRoutes/edit/update" method="POST" class="w-50 mx-auto bg-light p-3 rounded shadow">
+<h3 class="text-center">Editar Cliente <b>{{veiculo.nome}}</b></h3>
+
+    <label for="nome">Nome:</label>
+    <input class="form-control" type="text" name="nome" id="" value={{veiculo.nome}}>
+
+    <label for="nome">Modelo:</label>
+    <input class="form-control" type="text" name="modelo" id="" value={{veiculo.modelo}}>
+
+    <label for="idade">marca:</label>
+    <input type="text" class="form-control" name="marca" id="" value={{veiculo.marca}}>
+    
+    <label for="sexo">ano_fab:</label>
+    <input type="text" class="form-control" name="ano_fab" id="" value={{veiculo.ano_fab}}>
+
+    <input type="hidden" name="id" id="" value={{veiculo.id}}>
+    <div class="w-100 text-center p-3">
+    <input type="submit" name="" id="" class="btn btn-info text-center col-6"  value="Editar">
+    </div>
+</form>
+</div>
