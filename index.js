@@ -1,20 +1,27 @@
 (async () => {
   const db = require('./projeto/import_cars/db/conn');
-  const veiculo = require('./projeto/import_cars/models/veiculoModel')
-  const cliente = require('./projeto/import_cars/models/clienteModel')
+  const veiculo = require('./projeto/import_cars/models/veiculoModel');
+  const cliente = require('./projeto/import_cars/models/clienteModel');
+  const vendedor = require('./import_cars/models/vendedorModel');
   await db.sync({ force: true });
+
+  const novovendedor = await vendedor.create({ nome: 'Mauricio', sexo: '0' });
+  const carro = await CanvasRenderingContext2D.findByPk(1, {
+    include: vendedor
+  });
+  //await carro.setvendedor([novovendedor]);
+  console.log(carro.categoria);
 
   const novoCliente = await cliente.create({
     nome: 'Dev'
   })
-
 
   const novoVeiculo = await veiculo.create({
     nome: 'Gol',
     modelo: 'Trend Line',
     marca: 'volkswagen',
     ano_fab: '2022',
-    idcliente: novocliente.id
+    idcliente: novoCliente.id
   })
   console.log(novoProduto);
 
