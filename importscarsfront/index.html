@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="acesso.js"></script>
+    <title>Login-ImportsCars</title>
+</head>
+
+<body>
+    <h1>Imports<span class="nome-loja">Cars</span></h1>
+    <h2>Bem-vindos ao melhor site de carro da américa do sul</h2>
+    <h3>Para acessar a loja é necessário fazer parte do nosso clube</h3>
+
+    <fieldset>
+        <legend>Entre com seus dados</legend>
+
+        <form name="form">
+            <!--inicio formulário-->
+            <strong>Usuário</strong> <br> <input class="dados" type="text" name="nome" autocomplete="off"><br><br>
+            <strong>Senha</strong> <br> <input class="dados" type="password" name="senha" autocomplete="off"><br><br>
+
+            <input class="botao" type="button" value="LOGIN" name="botao" onclick="acesso(this.form)">
+
+            <input class="botao" type="reset" name="limpar" value="LIMPAR">
+        </form>
+    </fieldset>
+
+
+</body>
+
+</html>

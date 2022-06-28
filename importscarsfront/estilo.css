@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fundo{
+    background: white;
+}
+
+.paragrafo{
+    text-align: center;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.vermelho{
+    color: red;
+}
+
+.imagens{
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+}
+
+a:link, a:visited, a:hover {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#link1{
+    width: 850px;
+    margin: 0 auto;
+   
+}
+#carro{
+    height: 307px;
+
+}
+#user{
+    height: auto;
+}
+#link2{
+    width: 850px;
+    margin: 0 auto;
+}
+
+#cabecalho{
+    padding: 10px;
+}
+
+#rodape{
+    margin: 10px;
+    background: orange;
+    text-align: center;
+    font-family: Arial;
+}
+
+#imagens{
+    margin: 20px;
+    width: 290px;
+    /*height: 140px;*/
+}
+
+body{
+    border: 7px solid orange;
+}
+
+hr{
+    clear: both;
+}
+
+h1{
+    font-size: 45px;
+    font-family: Arial;
+    color: orange;
+}
+
+fieldset{
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+legend{
+    text-align: center;
+}
